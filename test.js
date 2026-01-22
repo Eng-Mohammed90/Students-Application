@@ -1,5 +1,2 @@
-const password = "123456";
-console.log("Testing insecure code!", password); 
-const apikey = "123@456";
-console.log("Testing insecure code!", apikey);
-console.log("Hello Malak!");
+const password = process.env.PASSWORD || "default_password";
+console.log(password);
